@@ -2,6 +2,9 @@ name: Update configs when pve-kernel release
 
 on:
   workflow_dispatch:
+  push:
+  branches:
+    - master
   schedule:
     - cron: '0 2 * * *' # Every day
 
